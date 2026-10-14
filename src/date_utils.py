@@ -10,3 +10,9 @@ def format_date(value):
     return value.strftime("%d.%m.%Y")
 
   raise TypeError("value must be a date object")
+
+def is_weekend(value):
+  return value.weekday() >= 5
+
+def remove_spaces(value):
+  return value.replace(" ", "")
