@@ -2,7 +2,7 @@ from datetime import date
 
 
 def get_current_date():
-  return date.today().isoformat()
+  return date.today().strftime("%d.%m.%Y")
 
 
 def format_date(value):
