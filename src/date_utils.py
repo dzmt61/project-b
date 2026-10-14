@@ -2,8 +2,7 @@ from datetime import date
 
 
 def get_current_date():
-  return date.today().strftime("%d.%m.%Y")
-
+  return date.today().strftime("%Y/%m/%d")
 
 def format_date(value):
   if isinstance(value, date):
