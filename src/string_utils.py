@@ -1,9 +1,6 @@
-def reverse_string(value):
+def reverse_string(value: str) -> str:
   return value[::-1]
 
 
-def capitalize_words(value):
-  return " ".join(word.capitalize() for word in value.split())
-
-def remove_spaces(value):
-  return value.replace(" ", "")
+def capitalize_words(value: str) -> str:
+  return value.title()

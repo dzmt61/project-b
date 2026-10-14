@@ -1,14 +1,11 @@
-from datetime import date
+
+from datetime import date, datetime
 
 
-def get_current_date():
-  return date.today().strftime("%d.%m.%Y")
+def get_current_date() -> str:
+  return date.today().isoformat()
 
-def format_date(value):
-  if isinstance(value, date):
-    return value.strftime("%d.%m.%Y")
 
-  raise TypeError("value must be a date object")
-
-def is_weekend(value):
-  return value.weekday() >= 5
+def format_date(value: str, output_format: str = "%d.%m.%Y") -> str:
+  parsed_date = datetime.strptime(value, "%Y-%m-%d")
+  return parsed_date.strftime(output_format)
