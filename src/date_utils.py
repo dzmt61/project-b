@@ -13,6 +13,3 @@ def format_date(value):
 
 def is_weekend(value):
   return value.weekday() >= 5
-
-def remove_spaces(value):
-  return value.replace(" ", "")

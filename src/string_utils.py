@@ -4,3 +4,6 @@ def reverse_string(value):
 
 def capitalize_words(value):
   return " ".join(word.capitalize() for word in value.split())
+
+def remove_spaces(value):
+  return value.replace(" ", "")
